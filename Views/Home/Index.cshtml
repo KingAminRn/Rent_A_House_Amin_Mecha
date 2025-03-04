@@ -1,0 +1,39 @@
+﻿@model ItemListViewModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Items</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/index.css" asp-append-version="true" />
+
+</head>
+<body>
+
+    <div class="container section">
+        <h3 class="fw-normal text-center mb-5">
+            Welcome to Mecha! <br />
+            <span class="fs-5">book houses, restaurants, experiences and more on Mecha (@Model.CurrentViewName)</span>
+        </h3>
+
+        <div class="d-flex justify-content-center mb-4">
+            <div class="search">
+                <input placeholder="Search..." type="text">
+                <button type="submit">Go</button>
+            </div>
+        </div>
+
+
+        <div class="row row-cols-md-3 g-4">
+            @foreach (var item in Model.Items)
+            {
+                <partial name="_ItemCard" model="item" />
+            }
+        </div>
+    </div>
+
+</body>
+</html>
+

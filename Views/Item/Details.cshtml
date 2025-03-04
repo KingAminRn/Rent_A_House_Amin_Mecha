@@ -1,0 +1,36 @@
+﻿@model Item
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="~/css/index.css" asp-append-version="true" />
+
+<div class="row gx-5 my-5">
+    <!-- Left side: Image -->
+    <div class="col-5 d-flex align-items-center">
+        <img alt="@Model.Name" src="@Model.ImageUrl" class="img-fluid w-100" style="max-height: 400px; object-fit: contain;" />
+    </div>
+
+    <!-- Right side: Name + Description + Price + Form -->
+    <div class="col-7">
+        <h3>@Model.Name</h3> <!-- Name on the right -->
+        <h5 class="mb-4">@Model.Description</h5> <!-- Added spacing below -->
+
+        <div class="mt-4">
+            <h3 class="pull-right">@Model.Price.ToString("0.00 NOK")</h3>
+        </div>
+
+        <!-- Order Form -->
+        <form asp-controller="Order" asp-action="CreateOrderFromDetails" method="post">
+            <input type="hidden" name="ItemId" value="@Model.ItemId" />
+
+            <label for="OrderFromDate">Bestill fra:</label>
+            <input type="date" name="OrderFromDate" id="OrderFromDate" class="form-control w-50" required />
+
+            <label for="OrderToDate">Bestill til:</label>
+            <input type="date" name="OrderToDate" id="OrderToDate" class="form-control w-50" required />
+
+            <button type="submit" class="btn-bestill mt-3">
+                Bestill
+            </button>
+        </form>
+    </div>
+</div>
+

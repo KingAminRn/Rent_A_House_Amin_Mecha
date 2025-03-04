@@ -1,0 +1,29 @@
+﻿@model IEnumerable<OrderItem>
+
+<div class="container">
+    <table class='table table-striped' style='max-width: 1200px;'>
+        <tr>
+            <th>OrderItemId</th>
+            <th>ItemId</th>
+            <th>Item</th>
+            <th>Dato From</th>
+            <th>Date To</th>
+            <th>Total Days</th>
+            <th>Item Price</th>
+            <th>Total Price</th>
+        </tr>
+        @foreach (var orderItem in Model)
+        {
+            <tr>
+                <td>@orderItem.OrderItemId</td>
+                <td>@orderItem.ItemId</td>
+                <td>@orderItem.Item.Name</td>
+                <td>@orderItem.OrderFromDate</td>
+                <td>@orderItem.OrderToDate</td>
+                <td>@orderItem.TotalDays</td>
+                <td>@orderItem.Item.Price</td>
+                <td>@orderItem.OrderItemPrice</td>
+            </tr>
+        }
+    </table>
+</div>

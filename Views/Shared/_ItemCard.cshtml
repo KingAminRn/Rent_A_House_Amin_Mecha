@@ -1,0 +1,31 @@
+﻿@model Item
+
+<div class="col">
+    <div class="card bg-secondary rounded item-card">
+        <img src="@Model.ImageUrl" class="card-img-top" alt="@Model.Name" />
+
+        <div class="card-body item-card-body d-flex flex-column justify-content-between">
+            <div>
+                <h3>@Model.Name</h3>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center mt-3">
+                <h5 class="text-nowrap mb-0">
+                    @Model.Price.ToString("0.00 NOK")
+                </h5>
+                <a asp-controller="Item"
+                   asp-action="Details"
+                   asp-route-id="@Model.ItemId"
+                   class="book-now-btn">
+                    <span>Book Now</span>
+                    <svg width="190px" height="60px" viewBox="0 0 190 60">
+                        <polyline points="189,1 189,59 1,59 1,1 189,1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </a>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+

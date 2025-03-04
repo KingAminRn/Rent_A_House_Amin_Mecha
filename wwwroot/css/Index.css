@@ -1,0 +1,618 @@
+﻿body {
+}
+/* Hjem siden -----------------------------------------------------------------------------*/
+.section {
+    margin-top: 50px;
+}
+
+.item-card {
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+    .item-card:hover {
+        transform: scale(1.05);
+    }
+
+    .item-card img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px 8px 0 0;
+    }
+
+.item-card-body {
+    padding: 15px;
+    background: #fff;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.navbar {
+    background-color: #007bff !important;
+}
+
+    /* Change all nav links to white */
+    .navbar .nav-link {
+        color: white !important;
+        transition: all 0.3s ease; /* Smooth transition for hover effects */
+        text-decoration: none; /* Remove underline by default */
+    }
+
+        /* Hover effect for nav links: change color, underline, and scaling */
+        .navbar .nav-link:hover {
+            color: #f8f9fa !important; /* Slightly different white to make it stand out */
+            text-decoration: none; /* Underline text on hover */
+            transform: scale(1.1); /* Slight scaling effect on hover */
+        }
+
+    /* Hover effect for the navbar brand: change color */
+    .navbar .navbar-brand {
+        color: white !important;
+        transition: all 0.3s ease; /* Smooth transition */
+        text-decoration: none; /* Remove underline by default */
+    }
+
+        /* Hover effect for the brand: slight color change */
+        .navbar .navbar-brand:hover {
+            color: #f8f9fa !important; /* Change to a lighter shade of white on hover */
+            transform: scale(1.1); /* Slight scaling effect for emphasis */
+        }
+
+
+
+        /*Item Siden ----------------------------------------------------------------------*/
+
+.btn {
+    margin-right: 10px; /* Adds space to the right of every button */
+    margin-top: 5px; /* Pushes buttons down slightly */
+}
+
+
+/* Custom Light Blue Table Background */
+.table-lightblue {
+    background-color: #add8e6; /* Light blue */
+}
+
+/* Style for Create New Item Button */
+.btn-create-item {
+    background-color: #007bff; /* Bootstrap Blue */
+    color: white; /* White text */
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    display: inline-block;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+    /* Hover Effect for the Button */
+    .btn-create-item:hover {
+        background-color: #0056b3; /* Darker blue when hovered */
+        transform: scale(1.05); /* Slightly enlarge the button */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    }
+
+    /* Focus Effect for the Button */
+    .btn-create-item:focus {
+        outline: none; /* Remove focus outline */
+        box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5); /* Outline with blue when focused */
+    }
+
+
+
+
+/* Title Animation - Cube Effect */
+.button-icon {
+    display: flex;
+    align-items: center;
+    border: 3px #fff solid;
+    width: fit-content;
+    height: 50px; /* Consistent height */
+    cursor: pointer;
+    padding: 5px;
+    overflow: hidden;
+    background-color: transparent;
+    transition: border-color 0.4s ease-in-out;
+}
+
+    /* Hover Effect */
+    .button-icon:hover {
+        border-color: #ff98a2;
+    }
+
+/* Icon Styling */
+.icon {
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .icon svg {
+        width: 25px;
+        height: 25px;
+    }
+
+/* Title Animation - Cube Effect */
+.button-icon {
+    display: flex;
+    align-items: center;
+    border: 3px #fff solid;
+    width: 100%;
+    max-width: 100%;
+    height: 50px;
+    cursor: pointer;
+    padding: 5px;
+    overflow: hidden;
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+    /* Light Blue Hover Effect */
+    .button-icon:hover {
+        border-color: #66ccff; /* Light blue border */
+        background-color: #e6f7ff; /* Light blue background */
+    }
+
+/* Icon Styling */
+.icon {
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Title Animation - Cube Effect */
+.button-icon {
+    display: flex;
+    align-items: center;
+    border: 3px #fff solid;
+    width: fit-content;
+    height: 50px; /* Consistent height */
+    cursor: pointer;
+    padding: 5px;
+    overflow: hidden;
+    background-color: transparent;
+    transition: border-color 0.4s ease-in-out;
+}
+
+    /* Hover Effect */
+    .button-icon:hover {
+        border-color: #ff98a2;
+    }
+
+/* Icon Styling */
+.icon {
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .icon svg {
+        width: 25px;
+        height: 25px;
+    }
+
+/* Title Animation - Cube Effect */
+.button-icon {
+    display: flex;
+    align-items: center;
+    border: 3px #fff solid;
+    width: fit-content;
+    height: 50px; /* Consistent height */
+    cursor: pointer;
+    padding: 5px;
+    overflow: hidden;
+    background-color: transparent;
+    transition: border-color 0.4s ease-in-out, background-color 0.4s ease-in-out;
+}
+
+    /* Base Blue Color (less bright) */
+    .button-icon .cube .front {
+        background: #4fa3d1; /* Muted blue */
+    }
+
+    /* Light Blue Hover Effect (even softer) */
+    .button-icon:hover {
+        border-color: #4fa3d1; /* Muted blue border */
+        background-color: #99c2ff; /* Softer, less bright light blue */
+    }
+
+/* Icon Styling */
+.icon {
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .icon svg {
+        width: 25px;
+        height: 25px;
+    }
+
+/* Cube Animation */
+.cube {
+    transition: transform 0.4s ease-in-out;
+    transform-style: preserve-3d;
+    width: 220px;
+    height: 47px; /* Adjusted height to match `.side` */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Rotate on hover */
+.button-icon:hover .cube {
+    transform: rotateX(90deg);
+}
+
+/* Text Containers */
+.side {
+    position: absolute;
+    height: 47px;
+    width: 220px;
+    display: flex;
+    font-size: 0.85em;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    top: 0;
+}
+
+/* Top View */
+.top {
+    background: #99c2ff; /* Softer light blue */
+    color: #fff;
+    transform: rotateX(-90deg) translate3d(0, 0, 23px); /* Fixed alignment */
+}
+
+/* Front View */
+.front {
+    background: #4fa3d1; /* Muted blue */
+    color: #fff;
+    transform: translate3d(0, 0, 23px); /* Matches `.top` */
+}
+
+/* Change Text Background to Softer Light Blue on Hover */
+.button-icon:hover .front {
+    background: #99c2ff; /* Softer, less bright light blue */
+}
+
+/*_______________________________________________________________________________________________-*/
+
+/* Custom "Bestill" Button */
+.btn-bestill {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    padding-block: 0.5rem;
+    padding-inline: 1.25rem;
+    background-color: rgb(0 107 179);
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #ffff;
+    gap: 10px;
+    font-weight: bold;
+    border: 3px solid #ffffff4d;
+    outline: none;
+    overflow: hidden;
+    font-size: 15px;
+    text-decoration: none;
+    width: fit-content;
+}
+
+    /* Hover Effect */
+    .btn-bestill:hover {
+        transform: scale(1.05);
+        border-color: #fff9;
+    }
+
+        /* Shine Effect */
+        .btn-bestill:hover::before {
+            animation: shine 1.5s ease-out infinite;
+        }
+
+    .btn-bestill::before {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 100%;
+        background-image: linear-gradient( 120deg, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0) 70% );
+        top: 0;
+        left: -100px;
+        opacity: 0.6;
+    }
+
+@keyframes shine {
+    0% {
+        left: -100px;
+    }
+
+    60% {
+        left: 100%;
+    }
+
+    to {
+        left: 100%;
+    }
+}
+
+/*______________________________________________________*/
+
+/* Search Bar */
+.search {
+    display: inline-block;
+    position: relative;
+}
+
+    .search input[type="text"] {
+        width: 200px;
+        padding: 10px;
+        border: none;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        outline: none;
+    }
+
+    .search button[type="submit"] {
+        background-color: #4e99e9;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        padding: 10px 20px;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        position: absolute;
+        top: 0;
+        right: 0;
+        transition: 0.3s ease;
+    }
+
+        .search button[type="submit"]:hover {
+            transform: scale(1.1);
+            color: rgb(255, 255, 255);
+            background-color: blue;
+        }
+        /*______________________________________________________________*/
+
+/* General Button Styling */
+.button {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    padding-block: 0.5rem;
+    padding-inline: 1.25rem;
+    border-radius: 9999px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #ffff;
+    font-weight: bold;
+    border: 3px solid #ffffff4d;
+    outline: none;
+    overflow: hidden;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+/* Specific Colors */
+.btn-create-item {
+    background-color: rgb(0 107 179);
+}
+
+.btn-back-table {
+    background-color: rgb(108, 117, 125);
+}
+
+/* Hover Effects */
+.button:hover {
+    transform: scale(1.05);
+    border-color: #fff9;
+}
+
+/* Shine Animation */
+.button::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient( 120deg, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0) 70% );
+    top: 0;
+    left: -100px;
+    opacity: 0.6;
+}
+
+.button:hover::before {
+    animation: shine 1.5s ease-out infinite;
+}
+
+@keyframes shine {
+    0% {
+        left: -100px;
+    }
+
+    60% {
+        left: 100%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+/*_______________________________________________________*/
+
+.book-now-btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid #222;
+    outline: none;
+    transition: 1s ease-in-out;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+    .book-now-btn svg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        fill: none;
+        stroke: #91C9FF;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-dasharray: 150 480;
+        stroke-dashoffset: 150;
+        transition: stroke-dashoffset 1s ease-in-out;
+    }
+
+    .book-now-btn:hover {
+        background: #4F95DA;
+    }
+
+        .book-now-btn:hover span {
+            color: #fff;
+        }
+
+        .book-now-btn:hover svg {
+            stroke-dashoffset: -480;
+        }
+
+    .book-now-btn span {
+        color: black;
+        font-size: 18px;
+        font-weight: 600;
+        z-index: 1;
+    }
+
+/* Apply blue color only when on customer-page */
+body.customer-page .navbar-nav .nav-link {
+    color: #007bff !important; /* Custom blue color for navbar links */
+}
+
+    /* Optional: Darker blue color on hover for navbar links */
+    body.customer-page .navbar-nav .nav-link:hover {
+        color: #0056b3 !important; /* Darker blue on hover */
+    }
+
+
+/* Apply white color to navbar links only on the create-page */
+body.create-page .navbar-nav .nav-link {
+    color: #fff !important; /* White color for navbar links */
+}
+
+    /* Optional: Darker color on hover for navbar links */
+    body.create-page .navbar-nav .nav-link:hover {
+        color: #ccc !important; /* Lighter gray on hover */
+    }
+
+
+/* From Uiverse.io by adeladel522 */
+
+/* General button styling */
+.button {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    padding-block: 0.5rem;
+    padding-inline: 1.25rem;
+    background-color: rgb(0 107 179);
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #ffff;
+    gap: 10px;
+    font-weight: bold;
+    border: 3px solid #ffffff4d;
+    outline: none;
+    overflow: hidden;
+    font-size: 15px;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+    transform: scale(1.05);
+    border-color: #fff9;
+}
+
+    .button:hover .icon {
+        transform: translate(4px);
+    }
+
+    .button:hover::before {
+        animation: shine 1.5s ease-out infinite;
+    }
+
+.button::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient( 120deg, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0) 70% );
+    top: 0;
+    left: -100px;
+    opacity: 0.6;
+}
+
+@keyframes shine {
+    0% {
+        left: -100px;
+    }
+
+    60% {
+        left: 100%;
+    }
+
+    to {
+        left: 100%;
+    }
+}
+
+/* Style for Back button specifically */
+.back-button {
+    text-decoration: none; /* Remove underline */
+    display: inline-block;
+    background-color: gray; /* Gray color for back button */
+    border: 3px solid #ffffff4d; /* Keep border color */
+    color: white; /* Text color */
+}
+
+/* Flexbox layout for button container */
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Ensure buttons are spaced out */
+    gap: 15px; /* Space between buttons */
+    margin-top: 20px; /* Add some space above the buttons */
+    flex-wrap: wrap; /* Ensure they wrap on smaller screens */
+}
